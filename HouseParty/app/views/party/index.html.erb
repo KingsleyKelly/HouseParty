@@ -1,0 +1,27 @@
+<div class="background-party">
+<div class="container">
+
+  <div class="row">
+
+
+    <div class="col-md-offset-1 col-md-9 transparent">
+      <div class="">
+      <h1>Party</h1>
+      <p>Find me in app/views/party/index.html.erb</p>
+      <table class="table">
+        <tr>
+          <td> Id </td>
+          <td> Dj </td>
+        </tr>
+      <%- @hello.each do |dj| %>
+        <tr>
+        <td><%= dj.first %></td>
+        <td><%= dj.last %></td>
+        </tr>
+      <% end %>
+      </tr>
+    </table>
+    </div>
+    </div>
+  </div>
+</div>
